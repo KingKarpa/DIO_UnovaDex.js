@@ -1,0 +1,207 @@
+section.pokemonPreview{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.OnlyStyle.pokemonPreview-infoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8em 2em;
+    width: 45%;
+    max-width: 600px;
+}
+.pokemonPreview-lowBg > div{
+    padding: 1em;
+}
+
+/* Pokemon Preview: Top Area */
+div.OnlyStyle.pokemonPreview-topBg{
+    z-index: 0;
+    width: 100%;
+    background-image: radial-gradient(circle at 1px 1px, #7f7f7f 1px, #949494 0);
+    background-size: 10px 10px;
+    border-block: 4px solid #94ef18;
+}
+.pokemonPreview-photo, .pokemonPreview-photoShiny{
+    z-index: 1;
+    height: 180px;
+    margin: auto;
+    user-select: none;
+}
+.pokemonPreview-photoShiny{
+    display: none;
+}
+
+div.OnlyStyle.infoContainer-identityContainer{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    user-select: none;
+}
+.info__identity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 3em;
+    background: orange;
+    background: #6f6f6f;
+    border-top: 1px solid #94ef18;
+    border-right: 1px solid #94ef18;
+}
+.info__identity h2, .info__category h3{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.info__category{
+    display: none;
+}
+
+/* Pokemon Preview: Low Area */
+div.OnlyStyle.pokemonPreview-lowBg{
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+    background: #0cb47c;
+}
+.infoSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .6em;
+}
+.info-title{
+    font-size: 1.05em;
+    font-weight: 600;
+    user-select: none;
+}
+
+.info__type > div{
+    display: flex;
+    gap: 1em;
+}
+.info__type{
+    width: 100%;
+}
+.types{
+    width: 80px;
+    padding-block: .2em;
+    text-align: center;
+    border: 1px solid;
+    text-transform: capitalize;
+    user-select: none;
+}
+
+.info__measures{
+    flex-direction: row;
+    gap: 1em;
+}
+.info__measures > div{
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+
+.info__stats{
+    width: 100%;
+}
+.info__stats span{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .info__category{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 2.5em;
+        background: #5f5f5f;
+        font-size: 0.9em;
+    }
+    .info__category.js-isCommon{
+        color: #DDD;
+    }
+    .info__category.js-isLegendary{
+        color: #FFD700;
+    }
+    .info__category.js-isMythical{
+        color: #860000;
+    }
+}
+
+.types.normal {
+    background: #A8A77A;
+    border-color: hsl(59, 21%, 30%);
+}
+.types.fire {
+    background: #EE8130;
+    border-color: hsl(26, 85%, 30%);
+}
+.types.water {
+    background: #6390F0;
+    border-color: hsl(221, 82%, 30%);
+}
+.types.electric {
+    background: #F7D02C;
+    border-color: hsl(48, 93%, 30%);
+}
+.types.grass {
+    background: #7AC74C;
+    border-color: hsl(98, 52%, 30%);
+}
+.types.ice {
+    background: #96D9D6;
+    border-color: hsl(177, 47%, 20%);
+}
+.types.fighting {
+    background: #C22E28;
+    border-color: hsl(2, 66%, 20%);
+}
+.types.poison {
+    background: #A33EA1;
+    border-color: hsl(301, 45%, 20%);
+}
+.types.ground {
+    background: #E2BF65;
+    border-color: hsl(43, 68%, 30%);
+}
+.types.flying {
+    background: #A98FF3;
+    border-color: hsl(256, 81%, 60%);
+}
+.types.psychic {
+    background: #F95587;
+    border-color: hsl(342, 93%, 30%);
+}
+.types.bug {
+    background: #A6B91A;
+    border-color: hsl(67, 75%, 20%);
+}
+.types.rock {
+    background: #B6A136;
+    border-color: hsl(50, 54%, 20%);
+}
+.types.ghost {
+    background: #735797;
+    border-color: hsl(266, 27%, 20%);
+}
+.types.dragon {
+    background: #6F35FC;
+    border-color: hsl(257, 97%, 30%);
+}
+.types.dark {
+    background: #705746;
+    border-color: hsl(24, 23%, 20%);
+}
+.types.steel {
+    background: #B7B7CE;
+    border-color: hsl(240, 19%, 50%);
+}
+.types.fairy{
+    background: #D685AD;
+    border-color: hsl(330, 50%, 30%);
+}
