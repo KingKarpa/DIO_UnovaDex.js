@@ -22,7 +22,7 @@ function loadPokedex(){
         .catch((error) => console.log("Erro na função loadPokedex, confira o erro \n" + error))
 }
 
-function loadPokemonPreview(pokemonItem = null, lastSelected){
+function loadPokemonPreview(pokemonItem = null){
     !pokemonItem ? pokemonItem = document.querySelector(".isSelected") : {};
 
     pokeAPI.getPokemonInfoAPI(pokemonItem.id)
@@ -37,7 +37,6 @@ function loadPokemonPreview(pokemonItem = null, lastSelected){
             })
         })
         .catch(error => {
-            changeSelectedPokemon(lastSelected);
             console.log("Erro na função loadPokemonPreview, confira o erro \n" + error);
         })
 }
