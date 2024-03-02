@@ -1,9 +1,9 @@
-﻿# UnovaDex - DIO
+﻿# UnovaDex
 
 Esse projeto foi feito para cumprir o desafio final de Fundamentos de Front-End da DIO, durante o curso Desenvolvimento Frontend com Angular. <br>
 O desafio consiste em fazer uma pokedex consumido os dados vindos da PokeAPI. Além de estilizar o projeto de acordo.
 
-### [Teste UnovaDex](https://kingkarpa.github.io/UnovaDex-DIO/)
+### [Teste UnovaDex](https://kingkarpa.github.io/DIO_UnovaDex.js/)
 
 ## Sobre a Aplicação
 A ideia para realizar o desafio foi recriar a pokedex do jogo Pokemon que fez parte da minha infância, inspirando-me em seu design original. <br>
